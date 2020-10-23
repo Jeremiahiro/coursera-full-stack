@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Required meta tags always come first -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
-<!-- Font awesome and Bootstrap Social  -->
-<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-
-<!-- Customer CSS -->
-<link href="css/styles.css" rel="stylesheet">
 
 <head>
+
     <title>Ristorante Con Fusion</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,6 +37,7 @@
             </div>
         </div>
     </nav>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -50,6 +48,10 @@
                 </div>
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <a href="#reservation" class="btn btn-block btn-warning text-white"><strong>Reserve
+                            Table</strong></a>
                 </div>
             </div>
         </div>
@@ -65,29 +67,41 @@
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
                         <h2 class="mt-0">
-                            Uthappizza 
+                            Uthappizza
                             <span class="badge badge-danger">HOT</span>
                             <span class="badge badge-pill badge-secondary">$4.99</span>
                         </h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                        <p class="d-none d-sm-block">
+                            A unique combination of Indian Uthappam (pancake) and
                             Italian pizza, topped with Cerignola olives, ripe vine
-                            cherry tomatoes, Vidalia onion, Guntur chillies and
-                            Buffalo Paneer.</p>
+                            cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
-                    six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
-                    $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>
+                            Weekend Grand Buffet
+                            <span class="badge badge-danger">NEW</span>
+                        </h2>
+                        <p>
+                            Featuring mouthwatering combinations with a choice of five different salads, six enticing
+                            appetizers,
+                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for
+                            just
+                            $19.99 per person
+                        </p>
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
+                </div>
             </div>
         </div>
 
@@ -100,16 +114,115 @@
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png"
                         alt="Alberto Somayya">
                     <div class="media-body">
-                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h2 class="mt-0">
+                            Alberto Somayya
+                        </h2>
                         <h4>Executive Chef</h4>
-                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
+                        <p class="d-none d-sm-block">
+                            Award winning three-star Michelin chef with wide
                             International experience having worked closely with
                             whos-who in the culinary world, he specializes in
                             creating mouthwatering Indo-Italian fusion experiences.
                         </p>
                     </div>
                 </div>
+            </div>
+        </div>
 
+        <div class="row row-content align-items-center" id="reservation">
+            <div class="col-12 col-md-8 mx-auto">
+                <div class="card ">
+                    <div class="card-header bg-warning">
+                        <h3 class="text-white">Reserve a Table</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="">
+                            <form action="" role="form" class="form-horizont">
+                                <div class="form-group row">
+                                    <label for="date" class="col-12 col-md-2 col-form-label">Number of Guests</label>
+                                    <div class="col-12 col-md-8">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" name="number_of_guest"
+                                                        id="1" value="1">
+                                                    <label class="form-radio-label" for="1">
+                                                        <strong>1</strong>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" name="number_of_guest"
+                                                        id="2" value="2">
+                                                    <label class="form-radio-label" for="2">
+                                                        <strong>2</strong>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" name="number_of_guest"
+                                                        id="3" value="3">
+                                                    <label class="form-radio-label" for="3">
+                                                        <strong>3</strong>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" name="number_of_guest"
+                                                        id="4" value="4">
+                                                    <label class="form-radio-label" for="4">
+                                                        <strong>4</strong>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" name="number_of_guest"
+                                                        id="5" value="5">
+                                                    <label class="form-radio-label" for="5">
+                                                        <strong>5</strong>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" name="number_of_guest"
+                                                        id="6" value="6">
+                                                    <label class="form-radio-label" for="6">
+                                                        <strong>6</strong>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="date" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                    <div class="col-12 col-md-8">
+                                        <div class="row">
+                                            <div class="col-6 col-md-6">
+                                                <input type="text" class="form-control" id="date" name="date"
+                                                    placeholder="Date">
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <input type="text" class="form-control" id="time" name="time"
+                                                    placeholder="Time">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary">Reserve</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -138,6 +251,7 @@
                         <a href="mailto:confusion@food.net">confusion@food.net</a>
                     </address>
                 </div>
+
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
                         <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
